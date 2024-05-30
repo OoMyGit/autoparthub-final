@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <!--required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--meta-->
+    <meta name="description" content="Autoparthub Automotive  eCommerce html template. Multivendor responsive eCommerce template">
+    <meta name="author" content="ThemeTags">
+    <meta name="keywords" content="Autoparthub Automotive  ecommerce, admin template, online shop, e-commerce, ecommerce template, marketplace, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean">
+    <!--favicon icon-->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
+
+    <!--title-->
+    <title>GroStore - Autoparthub Automotive eCommerce Website</title>
+
+    <!--build:css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body>
+    
+    <div class="col-xxl-4 col-xl-3">
+                            <div class="topbar-info d-none d-xl-block">
+                                <p class="text-white fs-sm fw-medium mb-0">Welcome to our Organic store</p>
+                            </div>
+                        </div>
+    <!--scroll bottom to top button end-->
+    
+    <!--build:js-->
+    <!-- <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendors/jquery-ui.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendors/simplebar.min.js"></script>
+    <script src="assets/js/vendors/parallax-scroll.js"></script>
+    <script src="assets/js/vendors/isotop.pkgd.min.js"></script>
+    <script src="assets/js/vendors/countdown.min.js"></script>
+    <script src="assets/js/vendors/range-slider.js"></script>
+    <script src="assets/js/vendors/waypoints.js"></script>
+    <script src="assets/js/vendors/counterup.min.js"></script>
+    <script src="assets/js/vendors/typer.js"></script>
+    <script src="assets/js/app.js"></script> -->
+    <!--endbuild-->
+</body>
+
+</html>
