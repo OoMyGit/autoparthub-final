@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ShopGridController extends Controller
 {
-
     public function ShopGrid(Request $request)
-        {
-            return view("shop-grid");
-        }
+    {
+        $products = DB::table('product')->paginate(12); // Fetch 12 products per page
+        return view('shop-grid', compact('products'));
+    }
+
 }

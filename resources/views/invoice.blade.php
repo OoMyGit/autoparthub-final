@@ -308,9 +308,7 @@
                                                       class="fa-solid fa-angle-down"></i></span></a>
                                             <ul class="submenu-double-line">
                                                 <li><a href="{{ route('about') }}">About Us</a></li>
-                                                <li><a href="{{ route('services') }}">Services</a></li>
-                                                <li><a href="{{ route('service-details') }}">Service Details</a></li>
-                                                <li><a href="{{ route('my-account') }}">My Account</a></li>
+                                                                                        <li><a href="{{ route('my-account') }}">My Account</a></li>
                                                 <li><a href="{{ route('cart') }}">Cart</a></li>
                                                 <li><a href="{{ route('wishlist') }}">Wishlist</a></li>
                                                 <li><a href="{{ route('checkout') }}">Checkout</a></li>
@@ -321,8 +319,6 @@
                                                 <li><a href="{{ route('signup') }}">Sign Up</a></li>
                                                 <li><a href="404.html">404 Page</a></li>
                                                 <li><a href="500.html">500 Error Page</a></li>
-                                                <li><a href="{{ route('campaigns') }}">All Campaigns</a></li>
-                                                <li><a href="{{ route('campaign-single') }}">Campaigns Details</a></li>
                                                 <li><a href="{{ route('coupons') }}">All Coupons</a></li>
                                             </ul>
                                         </li>
@@ -596,9 +592,7 @@
                             <a href="javascript:void(0)">Pages<span class="ms-1 fs-xs float-end"><i class="fa-solid fa-angle-right"></i></span></a>
                             <ul>
                                 <li><a href="{{ route('about') }}">About Us</a></li>
-                                <li><a href="{{ route('services') }}">Services</a></li>
-                                <li><a href="{{ route('service-details') }}">Service Details</a></li>
-                                <li><a href="{{ route('my-account') }}">My Account</a></li>
+                                        <li><a href="{{ route('my-account') }}">My Account</a></li>
                                 <li><a href="{{ route('cart') }}">Cart</a></li>
                                 <li><a href="{{ route('wishlist') }}">Wishlist</a></li>
                                 <li><a href="{{ route('checkout') }}">Checkout</a></li>

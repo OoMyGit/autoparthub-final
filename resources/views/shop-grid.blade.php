@@ -38,7 +38,7 @@
         <div class="offcanvas_menu position-fixed">
             <div class="tt-short-info d-none d-md-none d-lg-none d-xl-block">
                 <button class="offcanvas-close"><i class="fa-solid fa-xmark"></i></button>
-                <a href="#" class="logo-wrapper d-inline-block mb-5"><img src="assets/img/logo.png" alt="logo" /></a>
+                <a href="{{ route('index') }}" class="logo-wrapper d-inline-block mb-5"><img src="storage/logo.jpg" alt="logo" /></a>
                 <div class="offcanvas-content">
                     <h4 class="mb-4">About Us</h4>
                     <p>
@@ -49,7 +49,7 @@
                         Mistaken denouncing pleasure and praising pain was born and we will give you complete account of the
                         system expound.
                     </p>
-                    <a href="#" class="btn btn-primary mt-4">About Us</a>
+                    <a href="{{ route('about') }}" class="btn btn-primary mt-4">About Us</a>
                 </div>
                 <div class="offcanvas-contact mt-5">
                     <h5 class="mb-20">Contact Info</h5>
@@ -69,7 +69,7 @@
             </div>
             <div class="mobile-menu d-md-block d-lg-block d-xl-none">
                 <button class="offcanvas-close"><i class="fa-solid fa-xmark"></i></button>
-                <a href="#" class="d-inline-block mb-5"><img src="assets/img/logo.png" alt="logo" /></a>
+                <a href="{{ route('index') }}" class="d-inline-block mb-5"><img src="assets/img/logo.png" alt="logo" /></a>
                 <nav class="mobile-menu-wrapper mt-4">
                     <ul>
                         <li class="has-submenu">
@@ -83,8 +83,6 @@
                             <a href="javascript:void(0)">Products<span class="ms-1 fs-xs float-end"><i class="fa-solid fa-angle-right"></i></span></a>
                             <ul>
                                 <li><a href="{{ route('shop-grid') }}">Shop Grid</a></li>
-                                <li><a href="{{ route('shop-grid-2') }}">Shop Grid V2</a></li>
-                                <li><a href="{{ route('product-details') }}">Product Details</a></li>
                             </ul>
                         </li>
                         <li class="has-submenu">
@@ -99,9 +97,7 @@
                             <a href="javascript:void(0)">Pages<span class="ms-1 fs-xs float-end"><i class="fa-solid fa-angle-right"></i></span></a>
                             <ul>
                                 <li><a href="{{ route('about') }}">About Us</a></li>
-                                <li><a href="{{ route('services') }}">Services</a></li>
-                                <li><a href="{{ route('service-details') }}">Service Details</a></li>
-                                <li><a href="{{ route('my-account') }}">My Account</a></li>
+                                        <li><a href="{{ route('my-account') }}">My Account</a></li>
                                 <li><a href="{{ route('cart') }}">Cart</a></li>
                                 <li><a href="{{ route('wishlist') }}">Wishlist</a></li>
                                 <li><a href="{{ route('checkout') }}">Checkout</a></li>
@@ -313,13 +309,13 @@
                                 <div class="sidebar-products-list">
                                     <div class="horizontal-product-card d-sm-flex align-items-center bg-white rounded-2 mt-4 gap-3 card-md">
                                         <div class="thumbnail position-relative rounded-2">
-                                            <a href="#"><img src="https://cdn.shopify.com/s/files/1/1889/8657/products/770323bf0d9bfb1342ffa7243e31b202_600x.jpg?v=1627479432g" alt="product" class="img-fluid"></a>
+                                            <a href="{{ route('index') }}"><img src="https://cdn.shopify.com/s/files/1/1889/8657/products/770323bf0d9bfb1342ffa7243e31b202_600x.jpg?v=1627479432g" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
-                                                <a href="{{ route('product-details') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
+                                                <a href="{{ route('index') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
                                             </div>
                                         </div>
                                         <div class="card-content mt-3 mt-sm-0">
-                                            <a href="#" class="d-block fs-sm fw-bold text-heading title d-block">K&N Universal Round Tapered Filter</a>
+                                            <a href="{{ route('index') }}" class="d-block fs-sm fw-bold text-heading title d-block">K&N Universal Round Tapered Filter</a>
                                             <div class="pricing mt-0">
                                                 <span class="fw-bold fs-xxs text-danger">Rp1,030,000</span>
                                             </div>
@@ -336,13 +332,13 @@
                                     </div>
                                     <div class="horizontal-product-card d-sm-flex align-items-center bg-white rounded-2 mt-4 gap-3 card-md">
                                         <div class="thumbnail position-relative rounded-2">
-                                            <a href="#"><img src="https://down-id.img.susercontent.com/file/id-11134207-7qukw-lhonlbgxz7mcdb" alt="product" class="img-fluid"></a>
+                                            <a href="{{ route('index') }}"><img src="https://down-id.img.susercontent.com/file/id-11134207-7qukw-lhonlbgxz7mcdb" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
-                                                <a href="{{ route('product-details') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
+                                                <a href="{{ route('index') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
                                             </div>
                                         </div>
                                         <div class="card-content mt-3 mt-sm-0">
-                                            <a href="#" class="d-block fs-sm fw-bold text-heading title d-block">Little Trees Vanilla Strawberry XTRA STRENGTH</a>
+                                            <a href="{{ route('index') }}" class="d-block fs-sm fw-bold text-heading title d-block">Little Trees Vanilla Strawberry XTRA STRENGTH</a>
                                             <div class="pricing mt-0">
                                                 <span class="fw-bold fs-xxs text-danger">Rp20,000</span>
                                             </div>
@@ -359,13 +355,13 @@
                                     </div>
                                     <div class="horizontal-product-card d-sm-flex align-items-center bg-white rounded-2 mt-4 gap-3 card-md">
                                         <div class="thumbnail position-relative rounded-2">
-                                            <a href="#"><img src="https://throtl.com/cdn/shop/products/9ba84430e8e27b27125aa5a7e5240fac_c9fd7b0b-58eb-4564-b7ac-26ae2061d636_750x.jpg?v=1627135543" alt="product" class="img-fluid"></a>
+                                            <a href="{{ route('index') }}"><img src="https://throtl.com/cdn/shop/products/9ba84430e8e27b27125aa5a7e5240fac_c9fd7b0b-58eb-4564-b7ac-26ae2061d636_750x.jpg?v=1627135543" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
-                                                <a href="{{ route('product-details') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
+                                                <a href="{{ route('index') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
                                             </div>
                                         </div>
                                         <div class="card-content mt-3 mt-sm-0">
-                                            <a href="#" class="d-block fs-sm fw-bold text-heading title d-block">Enkei T6S 18x8.5 35mm Offset 5x114.3 Bolt</a>
+                                            <a href="{{ route('index') }}" class="d-block fs-sm fw-bold text-heading title d-block">Enkei T6S 18x8.5 35mm Offset 5x114.3 Bolt</a>
                                             <div class="pricing mt-0">
                                                 <span class="fw-bold fs-xxs text-danger">Rp17,000,000</span>
                                             </div>
@@ -382,13 +378,13 @@
                                     </div>
                                     <div class="horizontal-product-card d-sm-flex align-items-center bg-white rounded-2 mt-4 gap-3 card-md">
                                         <div class="thumbnail position-relative rounded-2">
-                                            <a href="#"><img src="https://throtl.com/cdn/shop/products/b04aa74873e3f3b18c6c17f52bab1854_750x.jpg?v=1690378938" alt="product" class="img-fluid"></a>
+                                            <a href="{{ route('index') }}"><img src="https://throtl.com/cdn/shop/products/b04aa74873e3f3b18c6c17f52bab1854_750x.jpg?v=1690378938" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
-                                                <a href="{{ route('product-details') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
+                                                <a href="{{ route('index') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
                                             </div>
                                         </div>
                                         <div class="card-content mt-3 mt-sm-0">
-                                            <a href="#" class="d-block fs-sm fw-bold text-heading title d-block">MBRP Universal 30in High Flow Muffler</a>
+                                            <a href="{{ route('index') }}" class="d-block fs-sm fw-bold text-heading title d-block">MBRP Universal 30in High Flow Muffler</a>
                                             <div class="pricing mt-0">
                                                 <span class="fw-bold fs-xxs text-danger">Rp1,905,000</span>
                                             </div>
@@ -439,12 +435,15 @@
                                     </a>
                                 </div>
                             </div>
+
+                            <!-- product showed start-->
                             <div class="row g-4 justify-content-center">
+                                @foreach ($products as $product)
                                 <div class="col-lg-4 col-md-6 col-sm-10">
                                     <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
                                         <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
                                         <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
+                                            <img src="{{ $product->image }}" alt="{{ $product->nama_product }}" class="img-fluid">
                                             <div class="product-btns position-absolute d-flex gap-2 flex-column">
                                                 <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                                 <a href="#" class="rounded-btn">
@@ -459,7 +458,7 @@
                                             <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
                                                 <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
                                             </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
+                                            <a href="{{ route('product-details', $product->id_product) }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">{{ $product->nama_product }}</a>
                                             <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
                                                 <ul class="d-flex align-items-center me-2">
                                                     <li class="text-warning"><i class="fa-solid fa-star"></i></li>
@@ -470,404 +469,35 @@
                                                 </ul>
                                                 <span class="flex-shrink-0">(8 Reviews)</span>
                                             </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
+                                            <h6 class="price text-danger mb-4">Rp{{ number_format($product->price_unit, 0, ',', '.') }}</h6>
+                                            <form method="POST" action="{{ route('cart.store') }}">
+                                                @csrf
+                                                <!-- <input type="hidden" name="id_user" value="{{ auth()->id() }}"> -->
+                                                <input type="hidden" name="id_product" value="{{ $product->id_product }}">
+                                                <button type="submit" class="btn btn-outline-secondary d-block btn-md">Add to Cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                            <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-10">
-                                    <div class="vertical-product-card rounded-2 position-relative border-0 bg-white bg-white">
-                                        <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-12% OFF</span>
-                                        <div class="thumbnail position-relative text-center p-4">
-                                        <img src="https://throtl.com/cdn/shop/products/f4c272eb961c4441cacfd9018acca449_48956ee5-a1dc-4f69-a056-40344eae276c_750x.jpg?v=1683563362" alt="apple" class="img-fluid">
-                                            <div class="product-btns position-absolute d-flex gap-2 flex-column">
-                                                <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="#" class="rounded-btn">
-                                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.705 0.201222C10.4317 0.469526 10.4317 0.904522 10.705 1.17283L11.6101 2.06107H7.70001C6.15364 2.06107 4.90001 3.29144 4.90001 4.80917V5.49619C4.90001 5.87564 5.21341 6.18322 5.60001 6.18322C5.98662 6.18322 6.30001 5.87564 6.30001 5.49619V4.80917C6.30001 4.0503 6.92679 3.43512 7.70001 3.43512H11.6101L10.705 4.32337C10.4317 4.59166 10.4317 5.02668 10.705 5.29496C10.9784 5.56325 11.4216 5.56325 11.695 5.29496L13.795 3.2339C14.0683 2.96559 14.0683 2.5306 13.795 2.26229L11.695 0.201222C11.4216 -0.0670741 10.9784 -0.0670741 10.705 0.201222ZM8.40001 4.80917C8.0134 4.80917 7.70001 5.11675 7.70001 5.49619V6.18322C7.70001 6.9421 7.07323 7.55726 6.30001 7.55726H2.38995L3.29498 6.66901C3.56835 6.40073 3.56835 5.9657 3.29498 5.69742C3.02161 5.42914 2.5784 5.42914 2.30503 5.69742L0.205023 7.75849C-0.0683411 8.02678 -0.0683411 8.4618 0.205023 8.73008L2.30503 10.7912C2.5784 11.0594 3.02161 11.0594 3.29498 10.7912C3.56835 10.5229 3.56835 10.0878 3.29498 9.81957L2.38995 8.93131H6.30001C7.84638 8.93131 9.10001 7.70092 9.10001 6.18322V5.49619C9.10001 5.11675 8.78662 4.80917 8.40001 4.80917Z" fill="#AEB1B9"></path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-regular fa-eye"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="mb-2  tt-category tt-line-clamp tt-clamp-1">
-                                                <a href="{{ route('shop-grid') }}" class="d-inline-block text-muted fs-xxs">Rims</a>
-                                            </div>
-                                            <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2 tt-line-clamp tt-clamp-2">Advan RG-D2 16x7.0 +42 4-100 Semi Gloss Black Wheel</a>
-                                            <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
-                                                <ul class="d-flex align-items-center me-2">
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                    <li class="text-warning"><i class="fa-solid fa-star"></i></li>
-                                                </ul>
-                                                <span class="flex-shrink-0">(8 Reviews)</span>
-                                            </div>
-                                            <h6 class="price text-danger mb-4">Rp17,000,000</h6>
-                                            <a href="#" class="btn btn-outline-secondary d-block btn-md">Add to Cart</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
+                            <!-- product showed end-->
+
+                            <!-- Pagination -->
+                            <div class="template-pagination d-flex align-items-center mt-6">
+                                {{ $products->links() }}
+                            </div>
+
+                            <!--
                             <ul class="template-pagination d-flex align-items-center mt-6">
                                 <li><a href="#" class="active">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
                                 <li><a href="#">4</a></li>
-                                <li><a href="#">>><i class="fas fa-angle-right"></i></a></li>
+                                <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
                             </ul>
+                            -->
+
                         </div>
                     </div>
                 </div>

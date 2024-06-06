@@ -83,8 +83,7 @@
                             <a href="javascript:void(0)">Products<span class="ms-1 fs-xs float-end"><i class="fa-solid fa-angle-right"></i></span></a>
                             <ul>
                                 <li><a href="{{ route('shop-grid') }}">Shop Grid</a></li>
-                                <li><a href="{{ route('shop-grid-2') }}">Shop Grid V2</a></li>
-                                <li><a href="{{ route('product-details') }}">Product Details</a></li>
+                             
                             </ul>
                         </li>
                         <li class="has-submenu">
@@ -99,9 +98,7 @@
                             <a href="javascript:void(0)">Pages<span class="ms-1 fs-xs float-end"><i class="fa-solid fa-angle-right"></i></span></a>
                             <ul>
                                 <li><a href="{{ route('about') }}">About Us</a></li>
-                                <li><a href="{{ route('services') }}">Services</a></li>
-                                <li><a href="{{ route('service-details') }}">Service Details</a></li>
-                                <li><a href="{{ route('my-account') }}">My Account</a></li>
+                                        <li><a href="{{ route('my-account') }}">My Account</a></li>
                                 <li><a href="{{ route('cart') }}">Cart</a></li>
                                 <li><a href="{{ route('wishlist') }}">Wishlist</a></li>
                                 <li><a href="{{ route('checkout') }}">Checkout</a></li>
@@ -180,23 +177,14 @@
                                             <div class="quickview-product-slider swiper">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide text-center">
-                                                        <img src="https://throtl.com/cdn/shop/products/5de77a34970880e41756d573a933543c_cb17ff86-a504-4419-93b4-3590c542d489_750x.png?v=1628679649" alt="jam" class="img-fluid">
+                                                        <img src="{{ $product->image }}" alt="{{ $product->nama_product }}" class="img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="product-thumbnail-slider swiper mt-80">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide product-thumb-single rounded-2 d-flex align-items-center justify-content-center">
-                                                        <img src="https://throtl.com/cdn/shop/products/5de77a34970880e41756d573a933543c_cb17ff86-a504-4419-93b4-3590c542d489_750x.png?v=1628679649" alt="jam" class="img-fluid">
-                                                    </div>
-                                                    <div class="swiper-slide product-thumb-single rounded-2 d-flex align-items-center justify-content-center">
-                                                        <img src="https://throtl.com/cdn/shop/products/5de77a34970880e41756d573a933543c_cb17ff86-a504-4419-93b4-3590c542d489_750x.png?v=1628679649" alt="jam" class="img-fluid">
-                                                    </div>
-                                                    <div class="swiper-slide product-thumb-single rounded-2 d-flex align-items-center justify-content-center">
-                                                        <img src="https://throtl.com/cdn/shop/products/5de77a34970880e41756d573a933543c_cb17ff86-a504-4419-93b4-3590c542d489_750x.png?v=1628679649" alt="jam" class="img-fluid">
-                                                    </div>
-                                                    <div class="swiper-slide product-thumb-single rounded-2 d-flex align-items-center justify-content-center">
-                                                        <img src="https://throtl.com/cdn/shop/products/5de77a34970880e41756d573a933543c_cb17ff86-a504-4419-93b4-3590c542d489_750x.png?v=1628679649" alt="jam" class="img-fluid">
+                                                        <img src="{{ $product->image }}" alt="{{ $product->nama_product }}" class="img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
@@ -204,7 +192,7 @@
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="product-info">
-                                            <h4 class="mt-1 mb-3">BBS LM-R 19x10 5x120 ET20 <br>Diamond Black Center Diamond Cut</h4>
+                                            <h4 class="mt-1 mb-3">{{ $product->nama_product }}</h4>
                                             <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
                                                 <ul class="d-flex align-items-center me-2">
                                                     <li class="text-warning"><i class="fa-solid fa-star"></i></li>
@@ -216,7 +204,7 @@
                                                 <span class="flex-shrink-0">(10 Reviews)</span>
                                             </div>
                                             <div class="pricing mt-2">
-                                                <span class="fw-bold fs-xs text-danger">Rp111,740,000</span>
+                                                <span class="fw-bold fs-xs text-danger">Rp{{ number_format($product->price_unit, 0, ',', '.') }}</span>
                                             </div>
                                             <div class="widget-title d-flex mt-4">
                                                 <h6 class="mb-1 flex-shrink-0">Description</h6>
@@ -225,18 +213,17 @@
                                             <h6 class="fs-md mb-2 mt-3">Weight:</h6>
                                             <ul class="product-radio-btn mb-4 d-flex align-items-center gap-2">
                                                 <li>
-                                                    <input type="radio" name="weight" value="250g" checked>
-                                                    <label>14986g</label>
+                                                    <input type="radio" name="weight" value="{{ $product->weight }}" checked>
+                                                    <label>{{ $product->weight }}</label>
                                                 </li>
                                             </ul>
                                             <div class="d-flex align-items-center gap-4 flex-wrap">
                                                 <div class="product-qty d-flex align-items-center">
-                                                    <button class="decrese">-</button>
-                                                    <input type="text" value="01">
-                                                    <button class="increase">+</button>
+                                                    <button class="decrease" id="decrease">-</button>
+                                                    <input type="text" value="1" id="quantity">
+                                                    <button class="increase" id="increase">+</button>
                                                 </div>
-                                                <a href="#" class="btn btn-secondary btn-md"><span class="me-2"><i
-                                                class="fa-solid fa-bag-shopping"></i></span>Add to Cart</a>
+                                                <a href="#" class="btn btn-secondary btn-md"><span class="me-2"><i class="fa-solid fa-bag-shopping"></i></span>Add to Cart</a>
                                             </div>
                                             <div class="tt-category-tag mt-4">
                                             </div>
@@ -253,19 +240,18 @@
                                 <div class="tab-content">
                                     <div class="tab-pane fade show active px-4 py-5" id="description">
                                         <h6 class="mb-2">Details:</h6>
-                                        <p class="mb-4">BBS LM-R 19x10 5x120 ET20 Diamond Black Center Diamond Cut</p>
-                                        <ul class="list-style-type-disc mb-4">
+                                        <p class="mb-4">{{ $product->description }}</p>
                                     </div>
                                     <div class="tab-pane fade px-4 py-5" id="info">
                                         <h6 class="mb-2">Additional Information:</h6>
                                         <table class="w-100 product-info-table">
                                             <tr>
-                                                <td class="text-dark fw-semibold">Colors</td>
-                                                <td> DiamondBlack</td>
+                                                <td class="text-dark fw-semibold">Category</td>
+                                                <td>{{ $product->nama_category }}</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-dark fw-semibold">Weight</td>
-                                                <td>14,9Kg</td>
+                                                <td>{{ $product->weight }}</td>
                                             </tr>
                                         </table>
                                     </div>
@@ -330,6 +316,44 @@
                                 </div>
                             </div>
                         </div>
+                        <script>
+                            document.getElementById('increase').addEventListener('click', function() {
+                                updateQuantity(1);
+                            });
+
+                            document.getElementById('decrease').addEventListener('click', function() {
+                                updateQuantity(-1);
+                            });
+
+                            function updateQuantity(amount) {
+                                var quantityElement = document.getElementById('quantity');
+                                var currentQuantity = parseInt(quantityElement.value);
+                                var newQuantity = currentQuantity + amount;
+                                if (newQuantity >= 0) {
+                                    quantityElement.value = newQuantity;
+                                    // Optionally, send an AJAX request to update the server
+                                    // updateServerQuantity(newQuantity);
+                                }
+                            }
+
+                            // function updateServerQuantity(newQuantity) {
+                            //     fetch('/update-quantity/{{ $product->id_product }}', {
+                            //         method: 'POST',
+                            //         headers: {
+                            //             'Content-Type': 'application/json',
+                            //             'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                            //         },
+                            //         body: JSON.stringify({ quantity: newQuantity })
+                            //     })
+                            //     .then(response => response.json())
+                            //     .then(data => {
+                            //         console.log('Success:', data);
+                            //     })
+                            //     .catch((error) => {
+                            //         console.error('Error:', error);
+                            //     });
+                            // }
+                        </script>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-8">
                         <div class="gshop-sidebar">
@@ -382,7 +406,7 @@
                                         <div class="thumbnail position-relative rounded-2">
                                             <a href="#"><img src="https://down-id.img.susercontent.com/file/2c63f5b0f7f552a725e87a68434bb757" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
-                                                <a href="{{ route('product-details') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
+                                                <a href="{{ route('product-details', ['id' => $product->id_product]) }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
                                             </div>
                                         </div>
                                         <div class="card-content mt-3 mt-sm-0">
@@ -405,7 +429,7 @@
                                         <div class="thumbnail position-relative rounded-2">
                                             <a href="#"><img src="https://throtl.com/cdn/shop/products/317b101225c2a2d30a15b30e561aec89_750x.jpg?v=1627458389" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
-                                                <a href="{{ route('product-details') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
+                                                <a href="{{ route('product-details', ['id' => $product->id_product]) }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
                                             </div>
                                         </div>
                                         <div class="card-content mt-3 mt-sm-0">
@@ -428,11 +452,11 @@
                                         <div class="thumbnail position-relative rounded-2">
                                             <a href="#"><img src="https://throtl.com/cdn/shop/products/a88f4b554aee1d2afc32343e02ab6b90_750x.jpg?v=1691838012" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
-                                                <a href="{{ route('product-details') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
+                                                <a href="{{ route('product-details', ['id' => $product->id_product]) }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
                                             </div>
                                         </div>
                                         <div class="card-content mt-3 mt-sm-0">
-                                        <a href="#" class="d-block fs-sm fw-bold text-heading title d-block">HKS GT5565-BB V band A/R 0.61 Turbo Kit - 14001</a>
+                                            <a href="#" class="d-block fs-sm fw-bold text-heading title d-block">HKS GT5565-BB V band A/R 0.61 Turbo Kit - 14001</a>
                                             <div class="pricing mt-0">
                                                 <span class="fw-bold fs-xxs text-danger">Rp52,800,000</span>
                                             </div>
@@ -451,7 +475,7 @@
                                         <div class="thumbnail position-relative rounded-2">
                                             <a href="#"><img src="https://throtl.com/cdn/shop/products/05b2bc69ad57c42257cac4a54df2b65c_750x.jpg?v=1627476549" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
-                                                <a href="{{ route('product-details') }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
+                                                <a href="{{ route('product-details', ['id' => $product->id_product]) }}" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
                                             </div>
                                         </div>
                                         <div class="card-content mt-3 mt-sm-0">

@@ -179,15 +179,11 @@
                                                       class="fa-solid fa-angle-down"></i></span></a>
                                             <ul class="submenu-double-line">
                                                 <li><a href="{{ route('about') }}">About Us</a></li>
-                                                <li><a href="{{ route('services') }}">Services</a></li>
-                                                <li><a href="{{ route('service-details') }}">Service Details</a></li>
                                                 <li><a href="{{ route('my-account') }}">My Account</a></li>
                                                 <li><a href="{{ route('contact') }}">Contact</a></li>
                                                 <li><a href="{{ route('team') }}">Team</a></li>
                                                 <li><a href="{{ route('login') }}">Login</a></li>
                                                 <li><a href="{{ route('signup') }}">Sign Up</a></li>
-                                                <li><a href="{{ route('campaigns') }}">All Campaigns</a></li>
-                                                <li><a href="{{ route('campaign-single') }}">Campaigns Details</a></li>
                                                 <li><a href="{{ route('coupons') }}">All Coupons</a></li>
                                             </ul>
                                         </li>

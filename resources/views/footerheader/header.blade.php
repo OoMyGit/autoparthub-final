@@ -73,16 +73,6 @@
                                                 Sign Up
                                             </a>
                                         </li>
-                                        <li>
-                                            <a class="dropdown-item fs-xs" href="{{ route('admin-login') }}">
-                                                Login as Admin
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item fs-xs" href="{{ route('admin-signup') }}">
-                                                Signup as Admin
-                                            </a>
-                                        </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -249,8 +239,6 @@
                                                       class="fa-solid fa-angle-down"></i></span></a>
                                             <ul>
                                                 <li><a href="{{ route('shop-grid') }}">Shop Grid</a></li>
-                                                <li><a href="{{ route('shop-grid-2') }}">Shop Grid V2</a></li>
-                                                <li><a href="{{ route('product-details') }}">Product Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="has-submenu">
@@ -267,9 +255,7 @@
                                                       class="fa-solid fa-angle-down"></i></span></a>
                                             <ul class="submenu-double-line">
                                                 <li><a href="{{ route('about') }}">About Us</a></li>
-                                                <li><a href="{{ route('services') }}">Services</a></li>
-                                                <li><a href="{{ route('service-details') }}">Service Details</a></li>
-                                                <li><a href="{{ route('my-account') }}">My Account</a></li>
+                                                                                        <li><a href="{{ route('my-account') }}">My Account</a></li>
                                                 <li><a href="{{ route('cart') }}">Cart</a></li>
                                                 <li><a href="{{ route('wishlist') }}">Wishlist</a></li>
                                                 <li><a href="{{ route('checkout') }}">Checkout</a></li>
@@ -278,10 +264,6 @@
                                                 <li><a href="{{ route('team') }}">Team</a></li>
                                                 <li><a href="{{ route('login') }}">Login</a></li>
                                                 <li><a href="{{ route('signup') }}">Sign Up</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                                <li><a href="500.html">500 Error Page</a></li>
-                                                <li><a href="{{ route('campaigns') }}">All Campaigns</a></li>
-                                                <li><a href="{{ route('campaign-single') }}">Campaigns Details</a></li>
                                                 <li><a href="{{ route('coupons') }}">All Coupons</a></li>
                                             </ul>
                                         </li>
@@ -332,13 +314,14 @@
                                         </button>
                                         <div class="cart-box-wrapper">
                                             <div class="apt_cart_box theme-scrollbar">
+                                                <!--
                                                 <ul class="at_scrollbar scrollbar">
                                                     <li class="d-flex align-items-center">
                                                         <div class="thumb-wrapper">
                                                             <a href="#"><img src="assets/img/products/thumb-sm-1.png" alt="products" class="img-fluid"></a>
                                                         </div>
                                                         <div class="items-content ms-3">
-                                                            <a href="{{ route('product-details') }}">
+                                                            <a href="{{ route('index') }}">
                                                                 <h6 class="mb-1">European Lemon Zest...</h6>
                                                             </a>
                                                             <div class="products_meta d-flex align-items-center">
@@ -356,7 +339,7 @@
                                                             <a href="#"><img src="assets/img/products/thumb-sm-2.png" alt="products" class="img-fluid"></a>
                                                         </div>
                                                         <div class="items-content ms-3">
-                                                            <a href="{{ route('product-details') }}">
+                                                            <a href="{{ route('index') }}">
                                                                 <h6 class="mb-1">Popped Rice Crisps...</h6>
                                                             </a>
                                                             <div class="products_meta d-flex align-items-center">
@@ -374,7 +357,7 @@
                                                             <a href="#"><img src="assets/img/products/thumb-sm-3.png" alt="products" class="img-fluid"></a>
                                                         </div>
                                                         <div class="items-content ms-3">
-                                                            <a href="{{ route('product-details') }}">
+                                                            <a href="{{ route('index') }}">
                                                                 <h6 class="mb-1">Dried Onion Men...</h6>
                                                             </a>
                                                             <div class="products_meta d-flex align-items-center">
@@ -392,7 +375,7 @@
                                                             <a href="#"><img src="assets/img/products/thumb-sm-4.png" alt="products" class="img-fluid"></a>
                                                         </div>
                                                         <div class="items-content ms-3">
-                                                            <a href="{{ route('product-details') }}">
+                                                            <a href="{{ route('index') }}">
                                                                 <h6 class="mb-1">European Lemon Zest...</h6>
                                                             </a>
                                                             <div class="products_meta d-flex align-items-center">
@@ -410,7 +393,7 @@
                                                             <a href="#"><img src="assets/img/products/thumb-sm-1.png" alt="products" class="img-fluid"></a>
                                                         </div>
                                                         <div class="items-content ms-3">
-                                                            <a href="{{ route('product-details') }}">
+                                                            <a href="{{ route('index') }}">
                                                                 <h6 class="mb-1">Popped Rice Crisps...</h6>
                                                             </a>
                                                             <div class="products_meta d-flex align-items-center">
@@ -428,7 +411,7 @@
                                                             <a href="#"><img src="assets/img/products/thumb-sm-2.png" alt="products" class="img-fluid"></a>
                                                         </div>
                                                         <div class="items-content ms-3">
-                                                            <a href="{{ route('product-details') }}">
+                                                            <a href="{{ route('index') }}">
                                                                 <h6 class="mb-1">Dried Onion Kinh Men...</h6>
                                                             </a>
                                                             <div class="products_meta d-flex align-items-center">
@@ -442,6 +425,7 @@
                                                         </div>
                                                     </li>
                                                 </ul>
+                                                -->
                                                 <div class="d-flex align-items-center justify-content-between mt-3">
                                                     <h6 class="mb-0">Subtotal:</h6>
                                                     <span class="fw-semibold text-primary">$1,247.00</span>

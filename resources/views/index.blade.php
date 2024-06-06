@@ -72,9 +72,7 @@
                         <li class="has-submenu">
                             <a href="javascript:void(0)">Products<span class="ms-1 fs-xs float-end"><i class="fa-solid fa-angle-right"></i></span></a>
                             <ul>
-                                <li><a href="{{ route('shop-grid') }}">Shop Grid</a></li>
-                                <li><a href="{{ route('shop-grid-2') }}">Shop Grid V2</a></li>
-                                <li><a href="{{ route('product-details') }}">Product Details</a></li>
+                                <li><a href="{{ route('shop-grid') }}">Catalog</a></li>
                             </ul>
                         </li>
                         <li class="has-submenu">
@@ -89,9 +87,7 @@
                             <a href="javascript:void(0)">Pages<span class="ms-1 fs-xs float-end"><i class="fa-solid fa-angle-right"></i></span></a>
                             <ul>
                                 <li><a href="{{ route('about') }}">About Us</a></li>
-                                <li><a href="{{ route('services') }}">Services</a></li>
-                                <li><a href="{{ route('service-details') }}">Service Details</a></li>
-                                <li><a href="{{ url('/my-account') }}">My Account</a></li>
+                                        <li><a href="{{ url('/my-account') }}">My Account</a></li>
                                 <li><a href="{{ route('cart') }}">Cart</a></li>
                                 <li><a href="{{ route('wishlist') }}">Wishlist</a></li>
                                 <li><a href="{{ route('checkout') }}">Checkout</a></li>
@@ -310,7 +306,7 @@
                     <div class="col-xxl-4 col-lg-6">
                         <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 gap-4">
                             <div class="thumbnail position-relative rounded-2">
-                                <a href="{{ route('product-details') }}"><img src="storage/aluminium-fan.png" alt="product" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/aluminium-fan.png" alt="product" class="img-fluid"></a>
                                 <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -332,17 +328,17 @@
                                     </ul>
                                     <span class="flex-shrink-0">(2.1k Reviews)</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Aluminum Fan Shroud Kit</a>
+                                <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Aluminum Fan Shroud Kit</a>
                                 <div class="pricing mt-2">
                                     <span class="fw-bold h4 deleted me-1 text-muted">Rp. 230.000</span>
                                     <span class="fw-bold h4 text-danger">Rp. 180.000</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 gap-4 mt-4">
                             <div class="thumbnail position-relative rounded-2">
-                                <a href="{{ route('product-details') }}"><img src="storage/alumium-radiator.png" alt="product" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/alumium-radiator.png" alt="product" class="img-fluid"></a>
                                 <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -364,17 +360,17 @@
                                     </ul>
                                     <span class="flex-shrink-0">(3.7k Reviews)</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Manual Aluminum Radiator</a>
+                                <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Manual Aluminum Radiator</a>
                                 <div class="pricing mt-2">
                                     <span class="fw-bold h4 deleted me-1 text-muted">Rp. 120.000</span>
                                     <span class="fw-bold h4 text-danger">Rp. 100.000</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 gap-4 mt-4">
                             <div class="thumbnail position-relative rounded-2">
-                                <a href="{{ route('product-details') }}"><img src="storage/hose-kit.png" alt="product" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/hose-kit.png" alt="product" class="img-fluid"></a>
                                 <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -396,17 +392,17 @@
                                     </ul>
                                     <span class="flex-shrink-0">(4.5k Reviews)</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Radiator Hose Kit</a>
+                                <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Radiator Hose Kit</a>
                                 <div class="pricing mt-2">
                                     <span class="fw-bold h4 deleted me-1 text-muted">Rp. 30.000</span>
                                     <span class="fw-bold h4 text-danger">Rp. 20.000</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 gap-4 mt-4">
                             <div class="thumbnail position-relative rounded-2">
-                                <a href="{{ route('product-details') }}"><img src="storage/electric-fanblack.png" alt="product" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/electric-fanblack.png" alt="product" class="img-fluid"></a>
                                 <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -428,12 +424,12 @@
                                     </ul>
                                     <span class="flex-shrink-0">(5.1k Reviews)</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Electric Slim Fan - Black</a>
+                                <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Electric Slim Fan - Black</a>
                                 <div class="pricing mt-2">
                                     <span class="fw-bold h4 deleted me-1 text-muted">Rp. 550.000</span>
                                     <span class="fw-bold h4 text-danger">Rp. 420.000</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -445,7 +441,7 @@
                                     <h4 class="mb-0">Cooling Parts </h4>
                                     <h3 class="mb-3">Air Filter </h3>
                                     <p class="mb-4">Get 20% Off on Selected Items</p>
-                                    <a href="{{ route('product-details') }}" class="btn btn-secondary">Shop Now <span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
+                                    <a href="{{ route('index') }}" class="btn btn-secondary">Shop Now <span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
                                 </div>
 
                                 <div class="thumbnail position-relative z-1">
@@ -458,7 +454,7 @@
                     <div class="col-xxl-4 col-lg-6 order-2 order-xxl-3">
                         <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 gap-4">
                             <div class="thumbnail position-relative rounded-2">
-                                <a href="{{ route('product-details') }}"><img src="storage/rearbar.png" alt="product" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/rearbar.png" alt="product" class="img-fluid"></a>
                                 <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -480,17 +476,17 @@
                                     </ul>
                                     <span class="flex-shrink-0">(1.4k Reviews)</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Rear Sway Bar</a>
+                                <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Rear Sway Bar</a>
                                 <div class="pricing mt-2">
                                     <span class="fw-bold h4 deleted me-1 text-muted">Rp. 120.000</span>
                                     <span class="fw-bold h4 text-danger">Rp. 100.000</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 gap-4 mt-4">
                             <div class="thumbnail position-relative rounded-2">
-                                <a href="{{ route('product-details') }}"><img src="storage/bushingkit.png" alt="product" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/bushingkit.png" alt="product" class="img-fluid"></a>
                                 <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -512,17 +508,17 @@
                                     </ul>
                                     <span class="flex-shrink-0">(2.3k Reviews)</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Bushing Upgrade Kit </a>
+                                <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Bushing Upgrade Kit </a>
                                 <div class="pricing mt-2">
                                     <span class="fw-bold h4 deleted me-1 text-muted">Rp. 750.000</span>
                                     <span class="fw-bold h4 text-danger">Rp. 650.000</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 gap-4 mt-4">
                             <div class="thumbnail position-relative rounded-2">
-                                <a href="{{ route('product-details') }}"><img src="storage/hatchback.png" alt="product" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/hatchback.png" alt="product" class="img-fluid"></a>
                                 <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -544,17 +540,17 @@
                                     </ul>
                                     <span class="flex-shrink-0">(5.2k Reviews)</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Coilover Civic Hatchback</a>
+                                <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Coilover Civic Hatchback</a>
                                 <div class="pricing mt-2">
                                     <span class="fw-bold h4 deleted me-1 text-muted">Rp. 550.000</span>
                                     <span class="fw-bold h4 text-danger">Rp. 420.000</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 gap-4 mt-4">
                             <div class="thumbnail position-relative rounded-2">
-                                <a href="{{ route('product-details') }}"><img src="storage/nanofiber.png" alt="product" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/nanofiber.png" alt="product" class="img-fluid"></a>
                                 <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -576,12 +572,12 @@
                                     </ul>
                                     <span class="flex-shrink-0">(5.2k Reviews)</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Nanofiber Dry Air Filter</a>
+                                <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Nanofiber Dry Air Filter</a>
                                 <div class="pricing mt-2">
                                     <span class="fw-bold h4 deleted me-1 text-muted">Rp. 80.000</span>
                                     <span class="fw-bold h4 text-danger">Rp. 60.000</span>
                                 </div>
-                                <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -615,7 +611,7 @@
                     <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-10 filter_item">
                         <div class="vertical-product-card rounded-2 position-relative">
                             <div class="thumbnail position-relative text-center p-4">
-                                <a href="{{ route('product-details') }}"><img src="storage/electricfan.png" alt="electricfan" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/electricfan.png" alt="electricfan" class="img-fluid"></a>
                                 <div class="product-btns position-absolute d-flex gap-2 flex-column">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#" class="rounded-btn">
@@ -628,7 +624,7 @@
                             </div>
                             <div class="card-content">
                                 <a href="{{ route('shop-grid') }}" class="mb-2 d-inline-block text-secondary fw-semibold fs-xxs">Cooling</a>
-                                <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2">Electric Slim Fan.</a>
+                                <a href="{{ route('index') }}" class="card-title fw-bold d-block mb-2">Electric Slim Fan.</a>
                                 <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
                                     <ul class="d-flex align-items-center me-2">
                                         <li class="text-warning"><i class="fa-solid fa-star"></i></li>
@@ -654,7 +650,7 @@
                         <div class="vertical-product-card rounded-2 position-relative">
                             <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-5% OFF</span>
                             <div class="thumbnail position-relative text-center p-4">
-                                <a href="{{ route('product-details') }}"><img src="storage/aemk.png" alt="aemk" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/aemk.png" alt="aemk" class="img-fluid"></a>
                                 <div class="product-btns position-absolute d-flex gap-2 flex-column">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#" class="rounded-btn">
@@ -667,7 +663,7 @@
                             </div>
                             <div class="card-content">
                                 <a href="{{ route('shop-grid') }}" class="mb-2 d-inline-block text-secondary fw-semibold fs-xxs">Gauge & Pods</a>
-                                <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2">AEM K-Type Thermocouple Kit</a>
+                                <a href="{{ route('index') }}" class="card-title fw-bold d-block mb-2">AEM K-Type Thermocouple Kit</a>
                                 <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
                                     <ul class="d-flex align-items-center me-2">
                                         <li class="text-warning"><i class="fa-solid fa-star"></i></li>
@@ -692,7 +688,7 @@
                     <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-10 filter_item vegetables">
                         <div class="vertical-product-card rounded-2 position-relative">
                             <div class="thumbnail position-relative text-center p-4">
-                                <a href="{{ route('product-details') }}"><img src="storage/oil-filter.png" alt="oilfilter" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/oil-filter.png" alt="oilfilter" class="img-fluid"></a>
                                 <div class="product-btns position-absolute d-flex gap-2 flex-column">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#" class="rounded-btn">
@@ -705,7 +701,7 @@
                             </div>
                             <div class="card-content">
                                 <a href="{{ route('shop-grid') }}" class="mb-2 d-inline-block text-secondary fw-semibold fs-xxs">Oils & Oil Filters</a>
-                                <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2">Universal Performance Gold Oil Filter</a>
+                                <a href="{{ route('index') }}" class="card-title fw-bold d-block mb-2">Universal Performance Gold Oil Filter</a>
                                 <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
                                     <ul class="d-flex align-items-center me-2">
                                         <li class="text-warning"><i class="fa-solid fa-star"></i></li>
@@ -731,7 +727,7 @@
                         <div class="vertical-product-card rounded-2 position-relative">
                             <span class="offer-badge text-white fw-bold fs-xxs bg-danger position-absolute start-0 top-0">-7% OFF</span>
                             <div class="thumbnail position-relative text-center p-4">
-                                <a href="{{ route('product-details') }}"><img src="storage/glade.png" alt="glade" class="img-fluid"></a>
+                                <a href="{{ route('index') }}"><img src="storage/glade.png" alt="glade" class="img-fluid"></a>
                                 <div class="product-btns position-absolute d-flex gap-2 flex-column">
                                     <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                     <a href="#" class="rounded-btn">
@@ -744,7 +740,7 @@
                             </div>
                             <div class="card-content">
                                 <a href="{{ route('shop-grid') }}" class="mb-2 d-inline-block text-secondary fw-semibold fs-xxs">Car Freshener</a>
-                                <a href="{{ route('product-details') }}" class="card-title fw-bold d-block mb-2">Glade Diamond Aqua 80ml</a>
+                                <a href="{{ route('index') }}" class="card-title fw-bold d-block mb-2">Glade Diamond Aqua 80ml</a>
                                 <div class="d-flex align-items-center flex-nowrap star-rating fs-xxs mb-2">
                                     <ul class="d-flex align-items-center me-2">
                                         <li class="text-warning"><i class="fa-solid fa-star"></i></li>
@@ -780,7 +776,7 @@
                             <span class="gshop-subtitle fs-xxs mb-1 text-dark d-inline-block">Hot Items</span>
                             <h6 class="mb-0">Suspension</h6>
                             <h4 class="mb-6">Car Suspension</h4>
-                            <a href="{{ route('product-details') }}" class="explore-btn fw-bold text-dark">Shop Now<span class="ms-1"><i class="fas fa-arrow-right"></i></span></a>
+                            <a href="{{ route('index') }}" class="explore-btn fw-bold text-dark">Shop Now<span class="ms-1"><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
@@ -789,7 +785,7 @@
                             <span class="gshop-subtitle fs-xxs mb-1 text-dark d-inline-block">Weekly Best Seller</span>
                             <h6 class="mb-0">Velg</h6>
                             <h4 class="mb-6">Wheel Rim</h4>
-                            <a href="{{ route('product-details') }}" class="explore-btn fw-bold text-dark">Shop Now<span class="ms-1"><i class="fas fa-arrow-right"></i></span></a>
+                            <a href="{{ route('index') }}" class="explore-btn fw-bold text-dark">Shop Now<span class="ms-1"><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
@@ -798,7 +794,7 @@
                             <span class="badge bg-danger gshop-subtitle mb-1">Top Offer</span>
                             <h6 class="mb-0">Interior Accessories</h6>
                             <h4 class="mb-6">Steering Wheel</h4>
-                            <a href="{{ route('product-details') }}" class="explore-btn fw-bold text-dark">Shop Now<span class="ms-1"><i class="fas fa-arrow-right"></i></span></a>
+                            <a href="{{ route('index') }}" class="explore-btn fw-bold text-dark">Shop Now<span class="ms-1"><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -815,7 +811,7 @@
                             <h6 class="mb-0">Body Kit Essentials</h6>
                             <h4 class="mb-2">Spotless & Immaculate</h4>
                             <p class="fw-medium mb-5">Get 50% Off on Selected Items</p>
-                            <a href="{{ route('product-details') }}" class="btn btn-primary btn-md">Show Now<span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
+                            <a href="{{ route('index') }}" class="btn btn-primary btn-md">Show Now<span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
                             <div class="banner-img-wrapper text-end mt--40">
                                 <img src="storage/spareparts.png" alt="spareparts" class="">
                             </div>
@@ -848,7 +844,7 @@
                                 <div class="col-lg-6">
                                     <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 shadow gap-4">
                                         <div class="thumbnail position-relative rounded-2">
-                                            <a href="{{ route('product-details') }}"><img src="storage/wiper.png" alt="product" class="img-fluid"></a>
+                                            <a href="{{ route('index') }}"><img src="storage/wiper.png" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                                 <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                                 <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -870,19 +866,19 @@
                                                 </ul>
                                                 <span class="flex-shrink-0">(5.2k Reviews)</span>
                                             </div>
-                                            <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Wiper Mobil HELLA Premium</a>
+                                            <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Wiper Mobil HELLA Premium</a>
                                             <div class="pricing mt-2">
                                                 <span class="fw-bold h4 deleted me-1">Rp. 240.000</span>
                                                 <span class="fw-bold h4 text-danger">Rp. 140.000</span>
                                             </div>
-                                            <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                            <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 shadow gap-4">
                                         <div class="thumbnail position-relative rounded-2">
-                                            <a href="{{ route('product-details') }}"><img src="storage/idetailer.png" alt="product" class="img-fluid"></a>
+                                            <a href="{{ route('index') }}"><img src="storage/idetailer.png" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                                 <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                                 <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -904,19 +900,19 @@
                                                 </ul>
                                                 <span class="flex-shrink-0">(1.7k Reviews)</span>
                                             </div>
-                                            <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Interior Detailer</a>
+                                            <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Interior Detailer</a>
                                             <div class="pricing mt-2">
                                                 <span class="fw-bold h4 deleted me-1">Rp. 240.000</span>
                                                 <span class="fw-bold h4 text-danger">Rp. 140.000</span>
                                             </div>
-                                            <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                            <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 shadow gap-4">
                                         <div class="thumbnail position-relative rounded-2">
-                                            <a href="{{ route('product-details') }}"><img src="storage/dream.png" alt="product" class="img-fluid"></a>
+                                            <a href="{{ route('index') }}"><img src="storage/dream.png" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                                 <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                                 <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -938,19 +934,19 @@
                                                 </ul>
                                                 <span class="flex-shrink-0">(3.1k Reviews)</span>
                                             </div>
-                                            <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">Dream Maker Gloss Amplifier</a>
+                                            <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">Dream Maker Gloss Amplifier</a>
                                             <div class="pricing mt-2">
                                                 <span class="fw-bold h4 deleted me-1">Rp. 240.000</span>
                                                 <span class="fw-bold h4 text-danger">Rp. 140.000</span>
                                             </div>
-                                            <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                            <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 shadow gap-4">
                                         <div class="thumbnail position-relative rounded-2">
-                                            <a href="{{ route('product-details') }}"><img src="storage/downpipe.png" alt="product" class="img-fluid"></a>
+                                            <a href="{{ route('index') }}"><img src="storage/downpipe.png" alt="product" class="img-fluid"></a>
                                             <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2 rounded-2">
                                                 <a href="#" class="rounded-btn"><i class="fa-regular fa-heart"></i></a>
                                                 <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn"><i class="fa-solid fa-eye"></i></a>
@@ -972,12 +968,12 @@
                                                 </ul>
                                                 <span class="flex-shrink-0">(2.3k Reviews)</span>
                                             </div>
-                                            <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block">High Flow Downpipe</a>
+                                            <a href="{{ route('index') }}" class="fw-bold text-heading title d-block">High Flow Downpipe</a>
                                             <div class="pricing mt-2">
                                                 <span class="fw-bold h4 deleted me-1">Rp. 240.000</span>
                                                 <span class="fw-bold h4 text-danger">Rp. 140.000</span>
                                             </div>
-                                            <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                            <a href="{{ route('index') }}" class="fs-xs fw-bold mt-3 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -997,7 +993,7 @@
                         <div class="banner-box background-banner rounded-2 banner-lg" data-background="storage/banner.png">
                             <span class="badge bg-danger mb-2">Top Offer</span>
                             <h3 class="mb-6 text-white gshop-title">High Quality & Affordable<br class="d-none d-sm-block"> Items <mark class="position-relative text-secondary position-relative bg-transparent">Special Offer<img src="storage/border-line.png" class="position-absolute start-0 border-line w-100" alt="border line"></mark></h3>
-                            <a href="{{ route('product-details') }}" class="btn btn-secondary btn-md">Shop Now<span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
+                            <a href="{{ route('index') }}" class="btn btn-secondary btn-md">Shop Now<span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <div class="col-xl-4">
@@ -1123,7 +1119,7 @@
                             </div>
                             <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 mt-3 border card-md gap-4">
                                 <div class="thumbnail position-relative rounded-2">
-                                    <a href="{{ route('product-details') }}"><img src="storage/ebc.png" alt="product" class="img-fluid"></a>
+                                    <a href="{{ route('index') }}"><img src="storage/ebc.png" alt="product" class="img-fluid"></a>
                                     <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-1 rounded-2">
                                         <a href="#" class="rounded-btn fs-xs"><i class="fa-regular fa-heart"></i></a>
                                         <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn fs-xs"><i class="fa-solid fa-eye"></i></a>
@@ -1145,17 +1141,17 @@
                                         </ul>
                                         <span class="flex-shrink-0">(5.2k Reviews)</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block fs-sm">EBC Big Brake Kits</a>
+                                    <a href="{{ route('index') }}" class="fw-bold text-heading title d-block fs-sm">EBC Big Brake Kits</a>
                                     <div class="pricing mt-2">
                                         <span class="fw-bold h4 deleted me-1">Rp. 240.000</span>
                                         <span class="fw-bold h4 text-danger">Rp. 140.000</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <a href="{{ route('index') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                             <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 mt-3 border card-md gap-4">
                                 <div class="thumbnail position-relative rounded-2">
-                                    <a href="{{ route('product-details') }}"><img src="storage/nrg.png" alt="product" class="img-fluid"></a>
+                                    <a href="{{ route('index') }}"><img src="storage/nrg.png" alt="product" class="img-fluid"></a>
                                     <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-1 rounded-2">
                                         <a href="#" class="rounded-btn fs-xs"><i class="fa-regular fa-heart"></i></a>
                                         <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn fs-xs"><i class="fa-solid fa-eye"></i></a>
@@ -1177,17 +1173,17 @@
                                         </ul>
                                         <span class="flex-shrink-0">(5.2k Reviews)</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block fs-sm">NRG Quick Release Kit</a>
+                                    <a href="{{ route('index') }}" class="fw-bold text-heading title d-block fs-sm">NRG Quick Release Kit</a>
                                     <div class="pricing mt-2">
                                         <span class="fw-bold h4 deleted me-1">Rp. 240.000</span>
                                         <span class="fw-bold h4 text-danger">Rp. 140.000</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <a href="{{ route('index') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                             <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 mt-3 border card-md gap-4">
                                 <div class="thumbnail position-relative rounded-2">
-                                    <a href="{{ route('product-details') }}"><img src="https://throtl.com/cdn/shop/products/4271b5f34b0852a94aac6e83ac768298_750x.jpg?v=1705665640" alt="product" class="img-fluid"></a>
+                                    <a href="{{ route('index') }}"><img src="https://throtl.com/cdn/shop/products/4271b5f34b0852a94aac6e83ac768298_750x.jpg?v=1705665640" alt="product" class="img-fluid"></a>
                                     <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-1 rounded-2">
                                         <a href="#" class="rounded-btn fs-xs"><i class="fa-regular fa-heart"></i></a>
                                         <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn fs-xs"><i class="fa-solid fa-eye"></i></a>
@@ -1209,12 +1205,12 @@
                                         </ul>
                                         <span class="flex-shrink-0">(5.2k Reviews)</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block fs-sm">EBC Big Brake Kits</a>
+                                    <a href="{{ route('index') }}" class="fw-bold text-heading title d-block fs-sm">EBC Big Brake Kits</a>
                                     <div class="pricing mt-2">
                                         <span class="fw-bold h4 deleted me-1">Rp. 240.000</span>
                                         <span class="fw-bold h4 text-danger">Rp. 140.000</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <a href="{{ route('index') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -1227,7 +1223,7 @@
                             </div>
                             <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 mt-3 border card-md gap-4">
                                 <div class="thumbnail position-relative rounded-2">
-                                    <a href="{{ route('product-details') }}"><img src="https://down-id.img.susercontent.com/file/id-11134207-7qukw-lhonlbgxz7mcdb" alt="product" class="img-fluid"></a>
+                                    <a href="{{ route('index') }}"><img src="https://down-id.img.susercontent.com/file/id-11134207-7qukw-lhonlbgxz7mcdb" alt="product" class="img-fluid"></a>
                                     <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-1 rounded-2">
                                         <a href="#" class="rounded-btn fs-xs"><i class="fa-regular fa-heart"></i></a>
                                         <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn fs-xs"><i class="fa-solid fa-eye"></i></a>
@@ -1249,17 +1245,17 @@
                                         </ul>
                                         <span class="flex-shrink-0">(5.2k Reviews)</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block fs-sm">Little Trees Vanilla Strawberry XTRA STRENGTH</a>
+                                    <a href="{{ route('index') }}" class="fw-bold text-heading title d-block fs-sm">Little Trees Vanilla Strawberry XTRA STRENGTH</a>
                                     <div class="pricing mt-2">
                                         <span class="fw-bold h4 deleted me-1">Rp. 20.000</span>
                                         <span class="fw-bold h4 text-danger">Rp. 20.000</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <a href="{{ route('index') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                             <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 mt-3 border card-md gap-4">
                                 <div class="thumbnail position-relative rounded-2">
-                                    <a href="{{ route('product-details') }}"><img src="https://throtl.com/cdn/shop/products/314afd2a-4225-42ee-8c9b-b14f479fc6e6-800_550x.jpg?v=1680018377" alt="product" class="img-fluid"></a>
+                                    <a href="{{ route('index') }}"><img src="https://throtl.com/cdn/shop/products/314afd2a-4225-42ee-8c9b-b14f479fc6e6-800_550x.jpg?v=1680018377" alt="product" class="img-fluid"></a>
                                     <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-1 rounded-2">
                                         <a href="#" class="rounded-btn fs-xs"><i class="fa-regular fa-heart"></i></a>
                                         <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn fs-xs"><i class="fa-solid fa-eye"></i></a>
@@ -1281,17 +1277,17 @@
                                         </ul>
                                         <span class="flex-shrink-0">(5.2k Reviews)</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block fs-sm">HKS SUPER FIRE RACING M40</a>
+                                    <a href="{{ route('index') }}" class="fw-bold text-heading title d-block fs-sm">HKS SUPER FIRE RACING M40</a>
                                     <div class="pricing mt-2">
                                         <span class="fw-bold h4 deleted me-1">Rp. 198.000</span>
                                         <span class="fw-bold h4 text-danger">Rp. 168.000</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <a href="{{ route('index') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                             <div class="horizontal-product-card d-sm-flex align-items-center p-3 bg-white rounded-2 mt-3 border card-md gap-4">
                                 <div class="thumbnail position-relative rounded-2">
-                                    <a href="{{ route('product-details') }}"><img src="https://throtl.com/cdn/shop/products/b19659c52cd902b8f1bc8e6cf21db1c1_bea60a08-5a4f-49b2-8260-14647f19715a_750x.jpg?v=1627501532" alt="product" class="img-fluid"></a>
+                                    <a href="{{ route('index') }}"><img src="https://throtl.com/cdn/shop/products/b19659c52cd902b8f1bc8e6cf21db1c1_bea60a08-5a4f-49b2-8260-14647f19715a_750x.jpg?v=1627501532" alt="product" class="img-fluid"></a>
                                     <div class="product-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center gap-1 rounded-2">
                                         <a href="#" class="rounded-btn fs-xs"><i class="fa-regular fa-heart"></i></a>
                                         <a href="#quickview_modal" data-bs-toggle="modal" class="rounded-btn fs-xs"><i class="fa-solid fa-eye"></i></a>
@@ -1313,12 +1309,12 @@
                                         </ul>
                                         <span class="flex-shrink-0">(5.2k Reviews)</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fw-bold text-heading title d-block fs-sm">Wilwood DPHA Front Caliper & Rotor Kit Drill Red Honda</a>
+                                    <a href="{{ route('index') }}" class="fw-bold text-heading title d-block fs-sm">Wilwood DPHA Front Caliper & Rotor Kit Drill Red Honda</a>
                                     <div class="pricing mt-2">
                                         <span class="fw-bold h4 deleted me-1">Rp. 200.000</span>
                                         <span class="fw-bold h4 text-danger">Rp. 100.000</span>
                                     </div>
-                                    <a href="{{ route('product-details') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                    <a href="{{ route('index') }}" class="fs-xs fw-bold mt-10 d-inline-block explore-btn">Shop Now<span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -1330,7 +1326,7 @@
                                 <span class="hot-badge bg-danger fw-bold fs-xs position-relative text-white">HOT</span>
                                 <span class="offer-title text-danger fw-bold">10% Off</span>
                             </div>
-                            <a href="{{ route('product-details') }}" class="explore-btn text-primary fw-bold">Shop Now<span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
+                            <a href="{{ route('index') }}" class="explore-btn text-primary fw-bold">Shop Now<span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                         <div class="counter-box bg-white rounded-2 mt-4">
                             <div class="horizontal-counter d-flex align-items-center gap-3">
